@@ -1,7 +1,7 @@
 dotnet restore
-dotnet build ./src/Monads
-dotnet build ./src/Monads.Test
+dotnet build ./src/Monads.NetCore
+dotnet build ./src/Monads.NetCore.Test
 
-dotnet test ./src/Monads.Test
+dotnet test ./src/Monads.NetCore.Test
 
-dotnet pack  .\src\Monads -c Release -o ./
+dotnet pack  .\src\Monads.NetCore -c Release -o ./
